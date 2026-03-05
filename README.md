@@ -2,18 +2,22 @@
 
 Real-time multilingual chat app with audio + translation support.
 
-## Features
-- Text chat with automatic language translation (via LibreTranslate)
-- WebRTC audio streaming (with echo cancellation)
-- No-login room system with optional password
-- 3-minute reconnection grace period
-- Translation cache and user language preferences
+## Current MVP in this repo
+- Simple room-based text chat over Socket.IO
+- Join a room name and exchange messages with other clients in the same room
 
-## Project Status
-- MVP in testing on Replit
-- GitHub sync: active
-- Next goals:
-  - Add persistent message storage
-  - Add UI themes and mobile layout
+## Run locally
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the server:
+   ```bash
+   npm start
+   ```
+3. Open two browser sessions to `http://localhost:3000`, enter the same room name, and send messages.
 
-## Dev Info# TranChat
+## Next goals
+- Add persistent message storage
+- Add UI themes and mobile layout
+- Add translation and audio streaming features
